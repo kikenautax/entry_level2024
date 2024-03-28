@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management Application</title>
+</head>
+<body>
+    <h1>Finance Management Application</h1>
+    <label for="income">Ingrese su ingreso total:</label>
+    <input type="number" id="income">
+    <button onclick="recordIncome()">Registrar Ingreso</button>
+    <br><br>
+    <label for="category">Seleccione una categoría:</label>
+    <select id="category">
+        <option value="Medical expenses">Gastos Médicos</option>
+        <option value="Household expenses">Gastos del Hogar</option>
+        <option value="Leisure">Ocio</option>
+        <option value="Savings">Ahorros</option>
+        <option value="Education">Educación</option>
+    </select>
+    <label for="expense">Ingrese el monto del gasto:</label>
+    <input type="number" id="expense">
+    <button onclick="recordExpense()">Registrar Gasto</button>
+    <br><br>
+    <button onclick="getTotalExpensesByCategory()">Obtener Total de Gastos por Categoría</button>
+    <button onclick="getTotalExpenses()">Obtener Total de Gastos</button>
+    <button onclick="checkFinancialStatus()">Verificar Estado Financiero</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
